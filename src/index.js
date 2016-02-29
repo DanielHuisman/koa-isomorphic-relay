@@ -44,27 +44,5 @@ export default (options) => {
         } else {
             ctx.throw(404, 'Not found');
         }
-
-        // match({
-        //     routes: options.routes,
-        //     location: ctx.req.url
-        // }, (err, redirectLocation, renderProps) => {
-        //     if (err) {
-        //         ctx.throw(500, err.message);
-        //     } else if (redirectLocation) {
-        //         ctx.redirect(redirectLocation.pathname + redirectLocation.search);
-        //     } else if (renderProps) {
-        //         IsomorphicRouter.prepareData(renderProps).then(({data, props}) => {
-        //             const reactOutput = ReactDOM.rendertoString(
-        //                 <IsomorphicRouter.RoutingContext {...props} />
-        //             );
-        //             const preloadedData = JSON.stringify(data);
-        //
-        //             // TODO: render
-        //         }, next);
-        //     } else {
-        //         ctx.throw(404, 'Not found');
-        //     }
-        // });
     };
 };
