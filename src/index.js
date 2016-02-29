@@ -2,6 +2,7 @@ import ReactDOM from 'react-dom/server';
 import Relay from 'relay';
 import {match} from 'react-router';
 import IsomorphicRouter from 'isomorphic-relay-router';
+import Helmet from 'react-helmet';
 
 export default (options) => {
     // Validate options
@@ -38,9 +39,10 @@ export default (options) => {
                 <IsomorphicRouter.RoutingContext {...props} />
             );
             const preloadedData = JSON.stringify(data);
+            const helmet = Helmet.rewind();
 
             ctx.status = 200;
-            ctx.body = await options.render(reactOutput, preloadedData);
+            ctx.body = await options.render(reactOutput, preloadedData, helmet);
         } else {
             ctx.throw(404, 'Not found');
         }

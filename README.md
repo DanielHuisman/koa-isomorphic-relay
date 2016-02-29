@@ -3,6 +3,15 @@
 Koa middleware for isomorphic React + Relay rendering and routing.
 This middleware implements basic server side pre-rendering, which is required for isomorphic rendering.
 
+## Components
+- `react` + `react-dom` for rendering
+- `react-helmet` for document head management
+- `relay` for data fetching and management
+- `isomorphic-relay` to make Relay isomorphic (see facebook/relay#136 and facebook/relay#558)
+- `react-router` for routing
+- `react-router-relay` to add support for Relay to the router
+- `isomorphic-relay-router` to make Relay Router isomorphic
+
 ## Installation
 ```bash
 $ npm install koa-isomorphic-relay
@@ -26,14 +35,16 @@ app.use(renderServer({
     routes: routes,
 
     // Rendering function (allows for use of templating engines for example)
-    render: async (reactOutput, preloadedData) => {
+    render: async (reactOutput, preloadedData, helmet) => {
         return `
             <!DOCTYPE>
             <html>
                 <head>
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <title>My isomorphic application</title>
+                    ${head.title.toString()}
+                    ${head.meta.toString()}
+                    ${head.link.toString()}
                 </head>
                 <body>
                     <div id="root">${reactOutput}</div>
