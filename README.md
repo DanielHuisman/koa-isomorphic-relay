@@ -59,6 +59,8 @@ app.use(renderServer({
 
 #### Client side
 ```javascript
+import ReactDOM from 'react-dom';
+import {browserHistory} from 'react-router';
 import IsomorphicRelay from 'isomorphic-relay';
 import IsomorphicRouter from 'isomorphic-relay-router';
 
