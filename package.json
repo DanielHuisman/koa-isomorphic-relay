@@ -15,7 +15,7 @@
   ],
   "scripts": {},
   "dependencies": {
-    "babel-polyfill": "^6.5.0",
+    "babel-polyfill": "^6.6.1",
     "isomorphic-relay": "^0.5.3",
     "isomorphic-relay-router": "^0.6.2",
     "react": "^0.14.7",
