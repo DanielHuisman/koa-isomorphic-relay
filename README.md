@@ -42,9 +42,9 @@ app.use(renderServer({
                 <head>
                     <meta charset="utf-8">
                     <meta name="viewport" content="width=device-width, initial-scale=1">
-                    ${head.title.toString()}
-                    ${head.meta.toString()}
-                    ${head.link.toString()}
+                    ${helmet.title.toString()}
+                    ${helmet.meta.toString()}
+                    ${helmet.link.toString()}
                 </head>
                 <body>
                     <div id="root">${reactOutput}</div>

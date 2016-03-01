@@ -1,7 +1,7 @@
 {
   "name": "koa-isomorphic-relay",
   "description": "Koa middleware for isomorphic React + Relay rendering and routing",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "ISC",
   "author": "Daniel Huisman <daniel@huisman.me> (https://danielhuisman.io)",
   "repository": "github:DanielHuisman/koa-isomorphic-relay",
