@@ -1,7 +1,7 @@
 {
   "name": "koa-isomorphic-relay",
   "description": "Koa middleware for isomorphic React + Relay rendering and routing",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "ISC",
   "author": "Daniel Huisman <daniel@huisman.me> (https://danielhuisman.io)",
   "repository": "github:DanielHuisman/koa-isomorphic-relay",
@@ -34,6 +34,7 @@
     "babel-relay-plugin": "^0.7.1",
     "eslint": "^2.2.0",
     "eslint-config-google": "^0.4.0",
-    "eslint-plugin-babel": "^3.1.0"
+    "eslint-plugin-babel": "^3.1.0",
+    "eslint-plugin-react": "^4.1.0"
   }
 }

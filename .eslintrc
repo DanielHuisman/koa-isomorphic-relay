@@ -1,7 +1,8 @@
 {
     "parser": "babel-eslint",
     "plugins": [
-        "babel"
+        "babel",
+        "react"
     ],
     "extends": "google",
     "env": {
@@ -22,7 +23,6 @@
             "SwitchCase": 1
         }],
         "radix": [2, "as-needed"],
-
         "generator-star-spacing": 0,
         "new-cap": 0,
         "array-bracket-spacing": 0,
@@ -37,6 +37,21 @@
         "babel/object-curly-spacing": 1,
         "babel/object-shorthand": 1,
         "babel/arrow-parens": 1,
-        "babel/no-await-in-loop": 1
+        "babel/no-await-in-loop": 1,
+
+        "react/display-name": 2,
+        "react/jsx-no-duplicate-props": 2,
+        "react/jsx-no-undef": 2,
+        "react/jsx-uses-react": 2,
+        "react/jsx-uses-vars": 2,
+        "react/no-danger": 2,
+        "react/no-deprecated": 2,
+        "react/no-did-mount-set-state": [2, "allow-in-func"],
+        "react/no-did-update-set-state": [2, "allow-in-func"],
+        "react/no-direct-mutation-state": 2,
+        "react/no-is-mounted": 2,
+        "react/no-unknown-property": 2,
+        "react/prop-types": 2,
+        "react/react-in-jsx-scope": 2
     }
 }

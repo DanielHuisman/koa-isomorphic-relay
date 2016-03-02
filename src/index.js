@@ -1,3 +1,4 @@
+import React from 'react';
 import ReactDOM from 'react-dom/server';
 import Relay from 'relay';
 import {match} from 'react-router';
