@@ -1,3 +1,7 @@
+// polyfill for async/await
+require("babel-register");
+require("babel-polyfill");
+
 import React from 'react';
 import ReactDOM from 'react-dom/server';
 import Relay from 'react-relay';
@@ -12,7 +16,7 @@ export default (options) => {
     } else if (!options.routes) {
         throw new Error('Missing options.routes');
     } else if (!options.render) {
-        throw new Error('Missing options.render');
+        throw new Error('Missing orsptions.render');
     }
 
     // Initialize middleware
