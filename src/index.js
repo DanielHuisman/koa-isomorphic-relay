@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/server';
-import Relay from 'relay';
+import Relay from 'react-relay';
 import {match} from 'react-router';
 import IsomorphicRouter from 'isomorphic-relay-router';
 import Helmet from 'react-helmet';
