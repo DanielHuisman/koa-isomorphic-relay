@@ -40,8 +40,8 @@ export default (options) => {
             ctx.redirect(redirectLocation.pathname + redirectLocation.search);
         } else if (renderProps) {
             const {data, props} = await IsomorphicRouter.prepareData(renderProps);
-            const reactOutput = ReactDOM.rendertoString(
-                <IsomorphicRouter.RoutingContext {...props} />
+            const reactOutput = ReactDOM.renderToString(
+                <IsomorphicRouter.RouterContext {...props} />
             );
             const preloadedData = JSON.stringify(data);
             const helmet = Helmet.rewind();
