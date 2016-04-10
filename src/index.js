@@ -16,7 +16,7 @@ export default (options) => {
     } else if (!options.routes) {
         throw new Error('Missing options.routes');
     } else if (!options.render) {
-        throw new Error('Missing orsptions.render');
+        throw new Error('Missing options.render');
     }
 
     // Initialize middleware
