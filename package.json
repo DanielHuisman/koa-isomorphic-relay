@@ -15,11 +15,9 @@
     "render"
   ],
   "scripts": {
-    "build": "babel src/index.js -o index.js",
-    "preversion": "npm run build && npm test",
-    "version": "git add .",
-    "pretest": "rm -rf ../kir-test && mkdir ../kir-test",
-    "test": "cd ../kir-test && npm i ../koa-isomorphic-relay && node -e \"require('koa-isomorphic-relay')\""
+    "build": "babel src/index.js -o lib/index.js",
+    "preversion": "npm run build",
+    "version": "git add ."
   },
   "dependencies": {
     "babel-polyfill": "^6.7.4",
