@@ -21,7 +21,6 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.7.4",
-    "babel-register": "^6.7.2",
     "isomorphic-relay": "0.5.4",
     "isomorphic-relay-router": "0.6.3",
     "react-helmet": "3.0.1",
@@ -30,8 +29,8 @@
     "react-router-relay": "0.9.5"
   },
   "peerDependencies": {
-      "react": "^15.0.1 || ^0.14.2",
-      "react-dom": "^15.0.1 || ^0.14.2"
+    "react": "^15.0.1 || ^0.14.2",
+    "react-dom": "^15.0.1 || ^0.14.2"
   },
   "devDependencies": {
     "babel-cli": "^6.7.5",

@@ -1,5 +1,4 @@
 // polyfill for async/await
-require("babel-register");
 require("babel-polyfill");
 
 import React from 'react';
